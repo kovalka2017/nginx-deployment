@@ -61,7 +61,7 @@ jobs:
 
       - name: Configure kubectl
         run: |
-          gcloud container clusters get-credentials <your-cluster-name> --region <your-region> --project ${{ secrets.GCP_PROJECT_ID }}
+          gcloud container clusters get-credentials autopilot-cluster-1 --region us-central1 --project ${{ secrets.GCP_PROJECT_ID }}
 
       - name: Deploy to Kubernetes
         run: |
