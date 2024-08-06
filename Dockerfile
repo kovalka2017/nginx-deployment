@@ -1,7 +1,4 @@
 FROM nginx:latest
-
-# Copy only necessary files to the correct locations
-COPY ./nginx-deployment/nginx.conf /etc/nginx/nginx.conf
-COPY ./nginx-deployment/html /usr/share/nginx/html
-
+COPY ./nginx-deployment/ /
 EXPOSE 80
+CMD ["sh", "-c", "nginx -g 'daemon off;' & /bin/sh"]
