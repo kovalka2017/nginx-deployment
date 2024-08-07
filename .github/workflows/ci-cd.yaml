@@ -10,6 +10,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Log in to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Configure Docker to use gcloud as a credential helper
+        run: |
+          gcloud auth configure-docker us-central1-docker.pkg.dev
+
+    
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -30,14 +41,7 @@ jobs:
           
           
 
-      - name: Log in to Google Cloud
-        uses: google-github-actions/auth@v1
-        with:
-          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
-      - name: Configure Docker to use gcloud as a credential helper
-        run: |
-          gcloud auth configure-docker
 
       - name: Push Docker image to GCR
         run: |
