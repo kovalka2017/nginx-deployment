@@ -1,4 +1,15 @@
+# Використовуємо базовий образ Nginx
 FROM nginx:latest
-COPY ./nginx-deployment/ /
+
+# Копіюємо ваші локальні конфігураційні файли до контейнера
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+# Додайте власні HTML-файли або інші ресурси
+COPY ./html /usr/share/nginx/html
+
+# Експонуємо необхідні порти
 EXPOSE 80
-CMD ["sh", "-c", "nginx -g 'daemon off;' & /bin/sh"]
+
+# Запуск Nginx
+CMD ["nginx", "-g", "daemon off;"]
