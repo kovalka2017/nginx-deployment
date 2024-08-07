@@ -39,6 +39,7 @@ jobs:
 
       - name: Push Docker image to GCR
         run: |
+          docker images
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
 
   deploy:
