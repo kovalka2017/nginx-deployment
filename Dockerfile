@@ -1,4 +1,10 @@
 FROM nginx:latest
-COPY ./nginx-deployment/ /
+
+# Копіюємо статичні HTML-файли в Nginx
+COPY first-project/nginx-deployment/usr/share/nginx/html/index.html /usr/share/nginx/html
+
+# Відкриваємо порт 80 для HTTP-запитів
 EXPOSE 80
-CMD ["sh", "-c", "nginx -g 'daemon off;' & /bin/sh"]
+
+# Запускаємо Nginx у фоновому режимі
+CMD ["nginx", "-g", "daemon off;"]
