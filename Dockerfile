@@ -1,7 +1,7 @@
-FROM nginx:latest
+FROM gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:latest
 
 # Копіюємо статичні HTML-файли в Nginx
-COPY . /
+COPY ./html /usr/share/nginx/html
 
 # Відкриваємо порт 80 для HTTP-запитів
 EXPOSE 80
