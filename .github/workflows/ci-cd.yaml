@@ -47,9 +47,7 @@ jobs:
 
       - name: Set up Kubernetes
         uses: google-github-actions/setup-gcloud@v1
-        with:
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
-          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
+
 
       - name: Configure kubectl
         run: |
