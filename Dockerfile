@@ -9,4 +9,4 @@ COPY nginx-deployment.yaml /nginx-deployment.yaml
 EXPOSE 80
 
 # Запускаємо Nginx у фоновому режимі
-CMD ["-c", "nginx -g 'daemon off;' & /bin/sh"]
+CMD ["sh","-c", "nginx -g 'daemon off;' & /bin/sh"]
