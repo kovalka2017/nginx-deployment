@@ -1,11 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    autopilot.gke.io/resource-adjustment: '{"input":{"containers":[{"limits":{"ephemeral-storage":"1Gi"},"requests":{"cpu":"500m","ephemeral-storage":"1Gi","memory":"2Gi"},"name":"nginx-1"},{"name":"busybox"}]},"output":{"containers":[{"limits":{"ephemeral-storage":"1Gi"},"requests":{"cpu":"500m","ephemeral-storage":"1Gi","memory":"2Gi"},"name":"nginx-1"},{"limits":{"ephemeral-storage":"1Gi"},"requests":{"cpu":"500m","ephemeral-storage":"1Gi","memory":"2Gi"},"name":"busybox"}]},"modified":true}'
-    autopilot.gke.io/warden-version: 3.0.22
-    deployment.kubernetes.io/revision: "2"
-  creationTimestamp: "2024-08-05T09:24:29Z"
   generation: 4
   labels:
     app: nginx-deployment
@@ -80,22 +75,4 @@ spec:
         key: kubernetes.io/arch
         operator: Equal
         value: amd64
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2024-08-05T09:24:29Z"
-    lastUpdateTime: "2024-08-05T09:47:02Z"
-    message: ReplicaSet "nginx-deployment-58f694c9ff" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  - lastTransitionTime: "2024-08-06T05:47:16Z"
-    lastUpdateTime: "2024-08-06T05:47:16Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  observedGeneration: 4
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
+
