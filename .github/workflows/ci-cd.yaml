@@ -58,4 +58,4 @@ jobs:
           kubectl apply -f nginx-deployment.yaml
       - name: Update image in Kubernetes deployment
         run: |
-          kubectl set image deployment/nginx-deployment nginx=gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
+          kubectl set image deployment/nginx-deployment nginx-1=gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
