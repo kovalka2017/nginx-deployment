@@ -20,20 +20,19 @@ jobs:
       - name: Configure Docker to use gcloud as a credential helper
         run: |
           gcloud auth configure-docker
-         
+          gcloud auth configure-docker us-central1-docker.pkg.dev
     
 
 
     
       - name: Build Docker image
         run: |
-          docker build -t us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest .
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest .
           
       - name: Push Docker image to GCR
         run: |
           docker images
-          docker push us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
-          
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build  # Запустити після завершення build job
@@ -54,7 +53,6 @@ jobs:
 
       - name: Configure kubectl
         run: |
-          gke-gcloud-auth-plugin
           gcloud container clusters get-credentials autopilot-cluster-1 --region us-central1 --project ${{ secrets.GCP_PROJECT_ID }}
       - name: Deploy to Kubernetes
         run: |
