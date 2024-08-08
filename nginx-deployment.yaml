@@ -6,8 +6,6 @@ metadata:
     app: nginx-deployment
   name: nginx-deployment
   namespace: default
-  resourceVersion: "1049245"
-  uid: 607af517-5e6b-4f42-81fe-cc2c0c542e32
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -70,9 +68,5 @@ spec:
         seccompProfile:
           type: RuntimeDefault
       terminationGracePeriodSeconds: 30
-      tolerations:
-      - effect: NoSchedule
-        key: kubernetes.io/arch
-        operator: Equal
-        value: amd64
+
 
