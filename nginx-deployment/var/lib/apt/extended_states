@@ -562,23 +562,3 @@ Package: libxdmcp6
 Architecture: amd64
 Auto-Installed: 1
 
-Package: xxd
-Architecture: amd64
-Auto-Installed: 1
-
-Package: libgpm2
-Architecture: amd64
-Auto-Installed: 1
-
-Package: vim-common
-Architecture: amd64
-Auto-Installed: 1
-
-Package: libsodium23
-Architecture: amd64
-Auto-Installed: 1
-
-Package: vim-runtime
-Architecture: amd64
-Auto-Installed: 1
-

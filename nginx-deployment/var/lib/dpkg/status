@@ -1471,24 +1471,6 @@ Description: GnuPG development runtime library
  It will likely be renamed "gpgrt" in the future.
 Homepage: https://www.gnupg.org/related_software/libgpg-error/
 
-Package: libgpm2
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 45
-Maintainer: Axel Beckert <abe@debian.org>
-Architecture: amd64
-Multi-Arch: same
-Source: gpm (1.20.7-10)
-Version: 1.20.7-10+b1
-Depends: libc6 (>= 2.33)
-Suggests: gpm
-Description: General Purpose Mouse - shared library
- This package provides a library that handles mouse requests
- and delivers them to applications. See the description for the 'gpm'
- package for more information.
-Homepage: https://nico.schottelius.org/software/gpm/
-
 Package: libgssapi-krb5-2
 Status: install ok installed
 Priority: optional
@@ -2329,28 +2311,6 @@ Depends: libc6 (>= 2.33)
 Description: smart column output alignment library
  This smart column output alignment library is used by fdisk utilities.
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
-
-Package: libsodium23
-Status: install ok installed
-Priority: optional
-Section: libs
-Installed-Size: 420
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Architecture: amd64
-Multi-Arch: same
-Source: libsodium
-Version: 1.0.18-1
-Depends: libc6 (>= 2.25)
-Description: Network communication, cryptography and signaturing library
- NaCl (pronounced "salt") is a new easy-to-use high-speed software library for
- network communication, encryption, decryption, signatures, etc.
- .
- NaCl's goal is to provide all of the core operations needed to build
- higher-level cryptographic tools.
- .
- Sodium is a portable, cross-compilable, installable, packageable fork of NaCl,
- with a compatible API.
-Homepage: https://www.libsodium.org/
 
 Package: libss2
 Status: install ok installed
@@ -3310,92 +3270,6 @@ Description: interactive login tools
  Tools commonly found on systems where humans login interactively,
  or are needed with non-standard system configurations.
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
-
-Package: vim
-Status: install ok installed
-Priority: optional
-Section: editors
-Installed-Size: 3650
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: amd64
-Version: 2:9.0.1378-2
-Provides: editor
-Depends: vim-common (= 2:9.0.1378-2), vim-runtime (= 2:9.0.1378-2), libacl1 (>= 2.2.23), libc6 (>= 2.34), libgpm2 (>= 1.20.7), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtinfo6 (>= 6)
-Suggests: ctags, vim-doc, vim-scripts
-Description: Vi IMproved - enhanced vi editor
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- Many new features have been added: multi level undo, syntax
- highlighting, command line history, on-line help, filename
- completion, block operations, folding, Unicode support, etc.
- .
- This package contains a version of vim compiled with a rather
- standard set of features.  This package does not provide a GUI
- version of Vim.  See the other vim-* packages if you need more
- (or less).
-Homepage: https://www.vim.org/
-
-Package: vim-common
-Status: install ok installed
-Priority: important
-Section: editors
-Installed-Size: 245
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Recommends: xxd, vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
-Conffiles:
- /etc/vim/vimrc a28f17fea43e405b96cdffd3d6522382
-Description: Vi IMproved - Common files
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- This package contains files shared by all non GUI-enabled vim variants
- available in Debian.  Examples of such shared files are: manpages and
- configuration files.
-Homepage: https://www.vim.org/
-
-Package: vim-runtime
-Status: install ok installed
-Priority: optional
-Section: editors
-Installed-Size: 36406
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Recommends: vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
-Breaks: vim-tiny (<< 2:9.0.1378-2)
-Enhances: vim-tiny
-Description: Vi IMproved - Runtime files
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- This package contains vimtutor and the architecture independent runtime
- files, used, if available, by all vim variants available in Debian.
- Example of such runtime files are: online documentation, rules for
- language-specific syntax highlighting and indentation, color schemes,
- and standard plugins.
-Homepage: https://www.vim.org/
-
-Package: xxd
-Status: install ok installed
-Priority: optional
-Section: editors
-Installed-Size: 135
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: amd64
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Replaces: vim-common (<< 2:7.4.2347-1~)
-Depends: libc6 (>= 2.34)
-Breaks: vim-common (<< 2:7.4.2347-1~)
-Description: tool to make (or reverse) a hex dump
- xxd creates a hex dump of a given file or standard input.  It can also convert
- a hex dump back to its original binary form.
-Homepage: https://www.vim.org/
 
 Package: zlib1g
 Status: install ok installed

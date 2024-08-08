@@ -219,7 +219,7 @@ Description: GNU core utilities
 Homepage: http://gnu.org/software/coreutils
 
 Package: curl
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: web
 Installed-Size: 488
@@ -428,7 +428,7 @@ Description: utilities for finding files--find, xargs
 Homepage: https://savannah.gnu.org/projects/findutils/
 
 Package: fontconfig-config
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: fonts
 Installed-Size: 527
@@ -440,8 +440,8 @@ Version: 2.14.1-4
 Depends: debconf (>= 0.5) | debconf-2.0, fonts-dejavu-core | ttf-bitstream-vera | fonts-liberation | fonts-liberation2 | fonts-croscore | fonts-freefont-otf | fonts-freefont-ttf | fonts-urw-base35 | fonts-texgyre
 Breaks: libfontconfig1 (<< 2.13.0)
 Conffiles:
- /etc/fonts/conf.d/README ad6182d0b838d9d8f39219a37b88b24d
- /etc/fonts/fonts.conf 9632eb1c8b4d81e0e300cd733a4beefe
+ /etc/fonts/conf.d/README newconffile
+ /etc/fonts/fonts.conf newconffile
 Description: generic font configuration library - configuration
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -452,7 +452,7 @@ Description: generic font configuration library - configuration
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
 Package: fonts-dejavu-core
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: fonts
 Installed-Size: 2960
@@ -462,18 +462,18 @@ Multi-Arch: foreign
 Source: fonts-dejavu
 Version: 2.37-6
 Conffiles:
- /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf 10d6f2176d76ee9b89a19a17811257f2
- /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf 6488b24401e477e35aa71237054c8ada
- /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf 0b01522fe76b4e5b8ab3d12383371348
- /etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf 0cbf30e4580c5a8570da071ab12c5e4d
- /etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf f7df7bba810dd953dd78212900f4dcad
- /etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf e90c678d46f49bb9d6ba469b64e80c0c
- /etc/fonts/conf.avail/57-dejavu-sans-mono.conf b9a76edd2aeb35cd1095e378963e2cdd
- /etc/fonts/conf.avail/57-dejavu-sans.conf 2156c2353cfcc81f33150cf889193c28
- /etc/fonts/conf.avail/57-dejavu-serif.conf 2604487cb2eee1bdb7010ea716faf408
- /etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf d2ee39274982cb4f831783cff742c8bc
- /etc/fonts/conf.avail/58-dejavu-lgc-sans.conf b4a8f51e45aa24fdee47b3f838cc0205
- /etc/fonts/conf.avail/58-dejavu-lgc-serif.conf 5f0b00e681b1f40b65dd336696ee0bbb
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf newconffile
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf newconffile
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf newconffile
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf newconffile
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf newconffile
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf newconffile
+ /etc/fonts/conf.avail/57-dejavu-sans-mono.conf newconffile
+ /etc/fonts/conf.avail/57-dejavu-sans.conf newconffile
+ /etc/fonts/conf.avail/57-dejavu-serif.conf newconffile
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf newconffile
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans.conf newconffile
+ /etc/fonts/conf.avail/58-dejavu-lgc-serif.conf newconffile
 Description: Vera font family derivate with additional characters
  DejaVu provides an expanded version of the Vera font family aiming for
  quality and broader Unicode coverage while retaining the original Vera
@@ -506,7 +506,7 @@ Description: GCC, the GNU Compiler Collection (base package)
 Homepage: http://gcc.gnu.org/
 
 Package: gettext-base
-Status: install ok installed
+Status: install ok unpacked
 Priority: standard
 Section: utils
 Installed-Size: 645
@@ -635,7 +635,7 @@ Description: helper tools for all init systems
  include their helpers in this package.
 
 Package: libabsl20220623
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 1913
@@ -672,7 +672,7 @@ Description: access control list - shared library
 Homepage: https://savannah.nongnu.org/projects/acl/
 
 Package: libaom3
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 5550
@@ -778,7 +778,7 @@ Description: Dynamic library for security auditing
 Homepage: https://people.redhat.com/sgrubb/audit/
 
 Package: libavif15
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 203
@@ -814,7 +814,7 @@ Description: block device ID library
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
 
 Package: libbrotli1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 783
@@ -836,7 +836,7 @@ Description: library implementing brotli encoder and decoder (shared libraries)
 Homepage: https://github.com/google/brotli
 
 Package: libbsd0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 202
@@ -1019,7 +1019,7 @@ Description: libcrypt shared library
 Important: yes
 
 Package: libcurl4
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 839
@@ -1050,7 +1050,7 @@ Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
 Homepage: https://curl.se/
 
 Package: libdav1d6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 1616
@@ -1093,7 +1093,7 @@ Description: Berkeley v5.3 Database Libraries [runtime]
 Homepage: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
 
 Package: libde265-0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 470
@@ -1128,7 +1128,7 @@ Description: Debian Configuration Management System (C-implementation library)
  This library allows C programs to interface with cdebconf.
 
 Package: libdeflate0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 161
@@ -1151,7 +1151,7 @@ Description: fast, whole-buffer DEFLATE-based compression and decompression
 Homepage: https://github.com/ebiggers/libdeflate
 
 Package: libedit2
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 258
@@ -1170,7 +1170,7 @@ Description: BSD editline and history libraries
 Homepage: https://www.thrysoee.dk/editline/
 
 Package: libexpat1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 387
@@ -1233,7 +1233,7 @@ Description: Foreign Function Interface library runtime
 Homepage: https://sourceware.org/libffi/
 
 Package: libfontconfig1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 579
@@ -1256,7 +1256,7 @@ Description: generic font configuration library - runtime
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
 Package: libfreetype6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 886
@@ -1296,7 +1296,7 @@ Description: FreeType 2 font engine, shared library files
 Homepage: https://freetype.org
 
 Package: libgav1-1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 945
@@ -1357,7 +1357,7 @@ Description: LGPL Crypto library - runtime library
 Homepage: https://directory.fsf.org/project/libgcrypt/
 
 Package: libgd3
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 448
@@ -1379,7 +1379,7 @@ Description: GD Graphics Library
 Homepage: http://www.libgd.org/
 
 Package: libgeoip1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 279
@@ -1472,26 +1472,8 @@ Description: GnuPG development runtime library
  It will likely be renamed "gpgrt" in the future.
 Homepage: https://www.gnupg.org/related_software/libgpg-error/
 
-Package: libgpm2
-Status: install ok unpacked
-Priority: optional
-Section: libs
-Installed-Size: 45
-Maintainer: Axel Beckert <abe@debian.org>
-Architecture: amd64
-Multi-Arch: same
-Source: gpm (1.20.7-10)
-Version: 1.20.7-10+b1
-Depends: libc6 (>= 2.33)
-Suggests: gpm
-Description: General Purpose Mouse - shared library
- This package provides a library that handles mouse requests
- and delivers them to applications. See the description for the 'gpm'
- package for more information.
-Homepage: https://nico.schottelius.org/software/gpm/
-
 Package: libgssapi-krb5-2
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 424
@@ -1516,7 +1498,7 @@ Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
 Homepage: https://web.mit.edu/kerberos/
 
 Package: libheif1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 659
@@ -1564,7 +1546,7 @@ Description: low level cryptographic library (public-key cryptos)
 Homepage: http://www.lysator.liu.se/~nisse/nettle/
 
 Package: libicu72
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 36170
@@ -1601,7 +1583,7 @@ Description: Internationalized domain names (IDNA2008/TR46) library
 Homepage: https://www.gnu.org/software/libidn/#libidn2
 
 Package: libjbig0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 84
@@ -1620,7 +1602,7 @@ Description: JBIGkit libraries
 Homepage: http://www.cl.cam.ac.uk/~mgk25/jbigkit/
 
 Package: libjpeg62-turbo
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 677
@@ -1645,7 +1627,7 @@ Description: libjpeg-turbo JPEG runtime library
 Homepage: https://www.libjpeg-turbo.org/
 
 Package: libk5crypto3
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 260
@@ -1670,7 +1652,7 @@ Description: MIT Kerberos runtime libraries - Crypto Library
 Homepage: https://web.mit.edu/kerberos/
 
 Package: libkeyutils1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 40
@@ -1691,7 +1673,7 @@ Description: Linux Key Management Utilities (library)
 Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 
 Package: libkrb5-3
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 1076
@@ -1717,7 +1699,7 @@ Description: MIT Kerberos runtime libraries
 Homepage: https://web.mit.edu/kerberos/
 
 Package: libkrb5support0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 133
@@ -1741,7 +1723,7 @@ Description: MIT Kerberos runtime libraries - Support library
 Homepage: https://web.mit.edu/kerberos/
 
 Package: libldap-2.5-0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 553
@@ -1760,7 +1742,7 @@ Description: OpenLDAP libraries
 Homepage: https://www.openldap.org/
 
 Package: liblerc4
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 649
@@ -1886,7 +1868,7 @@ Description: low level cryptographic library (symmetric and one-way cryptos)
 Homepage: http://www.lysator.liu.se/~nisse/nettle/
 
 Package: libnghttp2-14
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 220
@@ -1905,7 +1887,7 @@ Description: library implementing HTTP/2 protocol (shared library)
 Homepage: https://nghttp2.org/
 
 Package: libnuma1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 71
@@ -2055,7 +2037,7 @@ Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
 Homepage: https://pcre.org/
 
 Package: libpng16-16
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 416
@@ -2074,7 +2056,7 @@ Description: PNG library - runtime (version 1.6)
 Homepage: http://libpng.org/pub/png/libpng.html
 
 Package: libpsl5
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 96
@@ -2097,7 +2079,7 @@ Description: Library for Public Suffix List (shared libraries)
 Homepage: https://github.com/rockdaboot/libpsl
 
 Package: librav1e0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 2664
@@ -2114,7 +2096,7 @@ Description: Fastest and safest AV1 encoder - shared library
 Homepage: https://github.com/xiph/rav1e
 
 Package: librtmp1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 146
@@ -2134,7 +2116,7 @@ Description: toolkit for RTMP streams (shared library)
 Homepage: http://rtmpdump.mplayerhq.hu/
 
 Package: libsasl2-2
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 167
@@ -2162,7 +2144,7 @@ Description: Cyrus SASL - authentication abstraction library
 Homepage: https://www.cyrusimap.org/sasl/
 
 Package: libsasl2-modules-db
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 77
@@ -2331,28 +2313,6 @@ Description: smart column output alignment library
  This smart column output alignment library is used by fdisk utilities.
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
 
-Package: libsodium23
-Status: install ok unpacked
-Priority: optional
-Section: libs
-Installed-Size: 420
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Architecture: amd64
-Multi-Arch: same
-Source: libsodium
-Version: 1.0.18-1
-Depends: libc6 (>= 2.25)
-Description: Network communication, cryptography and signaturing library
- NaCl (pronounced "salt") is a new easy-to-use high-speed software library for
- network communication, encryption, decryption, signatures, etc.
- .
- NaCl's goal is to provide all of the core operations needed to build
- higher-level cryptographic tools.
- .
- Sodium is a portable, cross-compilable, installable, packageable fork of NaCl,
- with a compatible API.
-Homepage: https://www.libsodium.org/
-
 Package: libss2
 Status: install ok installed
 Priority: optional
@@ -2374,7 +2334,7 @@ Description: command-line interface parsing library
 Homepage: http://e2fsprogs.sourceforge.net
 
 Package: libssh2-1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 357
@@ -2436,7 +2396,7 @@ Description: GNU Standard C++ Library v3
 Homepage: http://gcc.gnu.org/
 
 Package: libsvtav1enc1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 6632
@@ -2496,7 +2456,7 @@ Description: Manage ASN.1 structures (runtime)
 Homepage: https://www.gnu.org/software/libtasn1/
 
 Package: libtiff6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 711
@@ -2591,7 +2551,7 @@ Description: Universally Unique ID library
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
 
 Package: libwebp7
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 544
@@ -2609,7 +2569,7 @@ Description: Lossy compression of digital photographic images
 Homepage: https://developers.google.com/speed/webp/
 
 Package: libx11-6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 1562
@@ -2632,7 +2592,7 @@ Description: X11 client-side library
  https://gitlab.freedesktop.org/xorg/lib/libX11
 
 Package: libx11-data
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: x11
 Installed-Size: 1577
@@ -2651,7 +2611,7 @@ Description: X11 client-side library
  https://gitlab.freedesktop.org/xorg/lib/libX11
 
 Package: libx265-199
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 16203
@@ -2669,7 +2629,7 @@ Description: H.265/HEVC video stream encoder (shared library)
 Homepage: http://x265.org
 
 Package: libxau6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 42
@@ -2691,7 +2651,7 @@ Description: X11 authorisation library
  https://gitlab.freedesktop.org/xorg/lib/libxau
 
 Package: libxcb1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 296
@@ -2719,7 +2679,7 @@ Description: X C Binding
 Homepage: https://xcb.freedesktop.org
 
 Package: libxdmcp6
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 53
@@ -2740,7 +2700,7 @@ Description: X11 Display Manager Control Protocol library
  git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
 
 Package: libxml2
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 1866
@@ -2763,7 +2723,7 @@ Description: GNOME XML library
 Homepage: http://xmlsoft.org
 
 Package: libxpm4
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 111
@@ -2782,7 +2742,7 @@ Description: X11 pixmap library
 Homepage: https://www.x.org
 
 Package: libxslt1.1
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 504
@@ -2823,7 +2783,7 @@ Description: shared library for xxhash
 Homepage: https://cyan4973.github.io/xxHash
 
 Package: libyuv0
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: libs
 Installed-Size: 671
@@ -2994,7 +2954,7 @@ Description: terminal-related programs and man pages
 Homepage: https://invisible-island.net/ncurses/
 
 Package: nginx
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: httpd
 Installed-Size: 3440
@@ -3007,24 +2967,24 @@ Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpcre2-8-0 (>= 10.22), libss
 Recommends: logrotate
 Conflicts: nginx-common, nginx-core
 Conffiles:
- /etc/default/nginx e2b1ae0f31c6d03d3305ef526b0ba3b5
- /etc/default/nginx-debug 719f6f9981039a05a64c201a4b1db19f
- /etc/init.d/nginx 7224be660d7c280a775bd6eca2547df4
- /etc/init.d/nginx-debug 57e8f64b4f464fc13701c6b22240ac10
- /etc/logrotate.d/nginx a4da44b03e39926b999329061770362b
- /etc/nginx/conf.d/default.conf 25c02145e4a2e1d2bc6da5d585cddd32
- /etc/nginx/fastcgi_params 4729c30112ca3071f4650479707993ad
- /etc/nginx/mime.types 754582375e90b09edaa6d3dbd657b3cf
- /etc/nginx/nginx.conf 756e7eaae19e95b5f49ce81e73b10512
- /etc/nginx/scgi_params df8c71e25e0356ffc539742f08fddfff
- /etc/nginx/uwsgi_params 88ac833ee8ea60904a8b3063fde791de
+ /etc/default/nginx newconffile
+ /etc/default/nginx-debug newconffile
+ /etc/init.d/nginx newconffile
+ /etc/init.d/nginx-debug newconffile
+ /etc/logrotate.d/nginx newconffile
+ /etc/nginx/conf.d/default.conf newconffile
+ /etc/nginx/fastcgi_params newconffile
+ /etc/nginx/mime.types newconffile
+ /etc/nginx/nginx.conf newconffile
+ /etc/nginx/scgi_params newconffile
+ /etc/nginx/uwsgi_params newconffile
 Description: high performance web server
  nginx [engine x] is an HTTP and reverse proxy server, as well as
  a mail proxy server.
 Homepage: https://nginx.org
 
 Package: nginx-module-geoip
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: httpd
 Installed-Size: 162
@@ -3038,7 +2998,7 @@ Description: nginx GeoIP dynamic modules
 Homepage: https://nginx.org/
 
 Package: nginx-module-image-filter
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: httpd
 Installed-Size: 136
@@ -3052,7 +3012,7 @@ Description: nginx image filter dynamic module
 Homepage: https://nginx.org/
 
 Package: nginx-module-njs
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: httpd
 Installed-Size: 5579
@@ -3066,7 +3026,7 @@ Description: nginx njs dynamic modules
 Homepage: https://nginx.org/
 
 Package: nginx-module-xslt
-Status: install ok installed
+Status: install ok unpacked
 Priority: optional
 Section: httpd
 Installed-Size: 128
@@ -3311,92 +3271,6 @@ Description: interactive login tools
  Tools commonly found on systems where humans login interactively,
  or are needed with non-standard system configurations.
 Homepage: https://www.kernel.org/pub/linux/utils/util-linux/
-
-Package: vim
-Status: install ok unpacked
-Priority: optional
-Section: editors
-Installed-Size: 3650
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: amd64
-Version: 2:9.0.1378-2
-Provides: editor
-Depends: vim-common (= 2:9.0.1378-2), vim-runtime (= 2:9.0.1378-2), libacl1 (>= 2.2.23), libc6 (>= 2.34), libgpm2 (>= 1.20.7), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtinfo6 (>= 6)
-Suggests: ctags, vim-doc, vim-scripts
-Description: Vi IMproved - enhanced vi editor
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- Many new features have been added: multi level undo, syntax
- highlighting, command line history, on-line help, filename
- completion, block operations, folding, Unicode support, etc.
- .
- This package contains a version of vim compiled with a rather
- standard set of features.  This package does not provide a GUI
- version of Vim.  See the other vim-* packages if you need more
- (or less).
-Homepage: https://www.vim.org/
-
-Package: vim-common
-Status: install ok unpacked
-Priority: important
-Section: editors
-Installed-Size: 245
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Recommends: xxd, vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
-Conffiles:
- /etc/vim/vimrc newconffile
-Description: Vi IMproved - Common files
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- This package contains files shared by all non GUI-enabled vim variants
- available in Debian.  Examples of such shared files are: manpages and
- configuration files.
-Homepage: https://www.vim.org/
-
-Package: vim-runtime
-Status: install ok unpacked
-Priority: optional
-Section: editors
-Installed-Size: 36406
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: all
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Recommends: vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
-Breaks: vim-tiny (<< 2:9.0.1378-2)
-Enhances: vim-tiny
-Description: Vi IMproved - Runtime files
- Vim is an almost compatible version of the UNIX editor Vi.
- .
- This package contains vimtutor and the architecture independent runtime
- files, used, if available, by all vim variants available in Debian.
- Example of such runtime files are: online documentation, rules for
- language-specific syntax highlighting and indentation, color schemes,
- and standard plugins.
-Homepage: https://www.vim.org/
-
-Package: xxd
-Status: install ok unpacked
-Priority: optional
-Section: editors
-Installed-Size: 135
-Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
-Architecture: amd64
-Multi-Arch: foreign
-Source: vim
-Version: 2:9.0.1378-2
-Replaces: vim-common (<< 2:7.4.2347-1~)
-Depends: libc6 (>= 2.34)
-Breaks: vim-common (<< 2:7.4.2347-1~)
-Description: tool to make (or reverse) a hex dump
- xxd creates a hex dump of a given file or standard input.  It can also convert
- a hex dump back to its original binary form.
-Homepage: https://www.vim.org/
 
 Package: zlib1g
 Status: install ok installed
