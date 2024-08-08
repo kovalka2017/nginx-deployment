@@ -25,7 +25,7 @@ spec:
         app: nginx-deployment
     spec:
       containers:
-      - image: nginx:latest
+      - image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:latest
         imagePullPolicy: Always
         name: nginx-1
         resources:
