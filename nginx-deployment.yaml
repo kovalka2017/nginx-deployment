@@ -41,13 +41,13 @@ spec:
             - NET_RAW
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
-      - command:
+      - image: busybox:latest
+        imagePullPolicy: Always
+        name: busybox
+        command:
         - sh
         - -c
         - echo Hello from BusyBox! && sleep 3600
-        image: busybox:latest
-        imagePullPolicy: Always
-        name: busybox
         resources:
           limits:
             ephemeral-storage: 1Gi
