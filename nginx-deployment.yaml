@@ -28,13 +28,6 @@ spec:
       - image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:latest
         imagePullPolicy: Always
         name: nginx-1
-        resources:
-          limits:
-            ephemeral-storage: 1Gi
-          requests:
-            cpu: 500m
-            ephemeral-storage: 1Gi
-            memory: 1Gi
         securityContext:
           capabilities:
             drop:
@@ -48,13 +41,6 @@ spec:
         - sh
         - -c
         - echo Hello from BusyBox! && sleep 3600
-        resources:
-          limits:
-            ephemeral-storage: 1Gi
-          requests:
-            cpu: 500m
-            ephemeral-storage: 1Gi
-            memory: 1Gi
         securityContext:
           capabilities:
             drop:
