@@ -3,15 +3,12 @@ kind: Service
 metadata:
   annotations:
     cloud.google.com/neg: '{"ingress":true}'
-  creationTimestamp: "2024-08-05T10:02:28Z"
   finalizers:
   - service.kubernetes.io/load-balancer-cleanup
   labels:
     app: nginx-deployment
   name: nginx-deployment-service
   namespace: default
-  resourceVersion: "38656"
-  uid: 29df4faa-c4e2-4479-84c8-ada55caf612d
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 34.118.234.11
