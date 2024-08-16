@@ -28,8 +28,4 @@ spec:
     app: nginx-deployment
   sessionAffinity: None
   type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-    - ip: 34.16.78.255
-      ipMode: VIP
+
