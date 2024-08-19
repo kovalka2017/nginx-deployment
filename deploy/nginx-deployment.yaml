@@ -39,7 +39,7 @@ spec:
         command:
         - sh
         - -c
-        - echo Hello from BusyBox! && sleep 3600
+        - echo Hello from BusyBox123456! && sleep 3600
         securityContext:
           capabilities:
             drop:
