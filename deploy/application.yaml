@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lolkek228 
+  namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: myalias=gcr.io/dynamic-circle-431306-h3/custom-nginx-busybox-deployment-image:latest     #Write repository name
+    argocd-image-updater.argoproj.io/myalias.pull-secret: pullsecret:argocd/gcr-json-key  # You can remove this annotation if you have already configured the gcr secret and are using the same secret to retrieve all GCR images in your deployments.
+    argocd-image-updater.argoproj.io/myalias.update-strategy: latest #There are several ways to update the image, but I'm using digest.
+    argocd-image-updater.argoproj.io/write-back-method: git  # We don't need the secret as mentioned in argocd doc because we already set it up via argocd console if you're using the same git repo.
+    argocd-image-updater.argoproj.io/git-branch: main 
+    argocd-image-updater.argoproj.io/myalias.force-update: "true"
+
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  
+  labels:
+    name: nginx-busybox-deployment
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/kovalka2017/nginx-deployment.git 
+    targetRevision: HEAD  
+    path: deploy # path of the kubernetes application code means where you stored deployment.yaml, service.yaml etc
+
+    
+  destination:
+    server: https://kubernetes.default.svc  # if you want to deploy application in the same cluster where argocd server is running if thats diffrent then use cluster IP address.
+    namespace: test
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
