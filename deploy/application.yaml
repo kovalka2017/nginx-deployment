@@ -13,7 +13,7 @@ metadata:
 
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-    - resources-finalizer.argocd.argoproj.io/foreground
+
   labels:
     name: nginx-busybox-deployment
 
