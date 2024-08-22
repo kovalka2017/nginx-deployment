@@ -11,8 +11,6 @@ metadata:
     argocd-image-updater.argoproj.io/git-branch: main 
     argocd-image-updater.argoproj.io/myalias.force-update: "true"
 
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
 
   labels:
     name: nginx-deployment
