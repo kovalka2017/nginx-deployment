@@ -15,7 +15,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 
   labels:
-    name: nginx-busybox-deployment
+    name: nginx-deployment
 
 spec:
   project: default
