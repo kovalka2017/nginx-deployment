@@ -22,7 +22,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/kovalka2017/nginx-deployment.git 
+    repoURL: git@github.com:kovalka2017/nginx-deployment.git
     targetRevision: HEAD  
     path: deploy # path of the kubernetes application code means where you stored deployment.yaml, service.yaml etc
 
