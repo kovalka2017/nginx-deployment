@@ -51,3 +51,11 @@ jobs:
       - name: Update nginx-deployment.yaml with new version
         run: |
           sed -i "s/tag:.*/tag: v${{ env.new_version }}/g" deploy/nginx-deployment.yaml
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add VERSION nginx-deployment.yaml
+          git commit -m "Increment version to ${{ env.new_version }}"
+          git push
