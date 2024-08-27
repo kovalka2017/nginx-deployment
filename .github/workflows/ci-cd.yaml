@@ -43,7 +43,7 @@ jobs:
   
       - name: Update nginx-deployment.yaml with new version
         run: |
-          echo "# Version: ${{ env.new_version }}" >> deploy/nginx-deployment.yaml
+          sed -i "/- image: gcr.io\/dynamic-circle-431306-h3\/custom-nginx-deployment-image:latest/a \ \ # Version: ${{ env.new_version }}" deploy/nginx-deployment.yaml
           cat deploy/nginx-deployment.yaml
 
       - name: Commit changes
