@@ -64,3 +64,5 @@ jobs:
         run: |
           docker images
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:${{ env.new_version }}
+
+          
