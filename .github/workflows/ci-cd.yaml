@@ -54,7 +54,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config --local user.email "kovalka2017@github.com"
+          git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
           git add VERSION deploy/nginx-deployment.yaml
           git commit -m "Increment version to ${{ env.new_version }}"
