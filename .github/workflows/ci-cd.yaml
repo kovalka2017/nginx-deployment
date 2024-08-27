@@ -20,21 +20,7 @@ jobs:
       - name: Configure Docker to use gcloud as a credential helper
         run: |
           gcloud auth configure-docker
-          gcloud auth configure-docker us-central1-docker.pkg.dev
-
-      - name: Determine version tag
-        id: get_version
-        run: |
-          VERSION_TAG=${{ github.run_number }}
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            VERSION_TAG="latest"
-          elif [ "${{ github.ref }}" == refs/tags/* ]; then
-            VERSION_TAG="${{ github.ref_name }}"
-          else
-            VERSION_TAG="${{ github.run_number }}"
-          fi
-          echo "VERSION_TAG=$VERSION_TAG" >> $GITHUB_ENV
-    
+          gcloud auth configure-docker us-central1-docker.pkg.dev   
 
 
     
@@ -47,3 +33,21 @@ jobs:
           docker images
           docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:${{ env.VERSION_TAG }}
 
+          
+      - name: Increment version
+        id: increment_version
+        run: |
+          VERSION_FILE="VERSION"
+          if [ ! -f $VERSION_FILE ]; then
+            echo "0.0.0" > $VERSION_FILE
+          fi
+          version=$(cat $VERSION_FILE)
+          IFS='.' read -r -a parts <<< "$version"
+          parts[2]=$((parts[2] + 1))
+          new_version="${parts[0]}.${parts[1]}.${parts[2]}"
+          echo $new_version > $VERSION_FILE
+          echo "new_version=$new_version" >> $GITHUB_ENV
+  
+      - name: Update nginx-deployment.yaml with new version
+        run: |
+          sed -i "s/tag:.*/tag: v${{ env.new_version }}/g" nginx-deployment.yaml
