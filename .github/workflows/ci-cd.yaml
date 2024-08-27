@@ -24,14 +24,7 @@ jobs:
 
 
     
-      - name: Build Docker image
-        run: |
-          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest .
-          
-      - name: Push Docker image to GCR
-        run: |
-          docker images
-          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:latest
+
 
           
       - name: Increment version
@@ -60,3 +53,13 @@ jobs:
           git add VERSION deploy/nginx-deployment.yaml
           git commit -m "Increment version to ${{ env.new_version }}"
           git push
+
+
+      - name: Build Docker image
+        run: |
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:${{ env.new_version }} .
+          
+      - name: Push Docker image to GCR
+        run: |
+          docker images
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/custom-nginx-deployment-image:${{ env.new_version }}
