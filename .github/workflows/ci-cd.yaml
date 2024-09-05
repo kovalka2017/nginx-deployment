@@ -41,19 +41,19 @@ jobs:
           echo $new_version > $VERSION_FILE
           echo "new_version=$new_version" >> $GITHUB_ENV
   
-      # - name: Update nginx-deployment.yaml with new version
-      #   run: |
-      #     sed -i "s|image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:.*|image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:v${{ env.new_version }}|g" deploy/nginx-deployment.yaml
+      - name: Update nginx-deployment.yaml with new version
+        run: |
+          sed -i "s|image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:.*|image: gcr.io/dynamic-circle-431306-h3/custom-nginx-deployment-image:v${{ env.new_version }}|g" deploy/nginx-deployment.yaml
 
-      #     cat deploy/nginx-deployment.yaml
+          cat deploy/nginx-deployment.yaml
 
-      # - name: Commit changes
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git add VERSION deploy/nginx-deployment.yaml
-      #     git commit -m "Increment version to ${{ env.new_version }}"
-      #     git push
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add VERSION deploy/nginx-deployment.yaml
+          git commit -m "Increment version to ${{ env.new_version }}"
+          git push
 
 
       - name: Build Docker image
