@@ -24,7 +24,7 @@ spec:
   source:
     repoURL: git@github.com:kovalka2017/nginx-deployment
     targetRevision: HEAD  
-    path: nginx-deployment/deploy # path of the kubernetes application code means where you stored deployment.yaml, service.yaml etc
+    path: deploy # path of the kubernetes application code means where you stored deployment.yaml, service.yaml etc
 
     
   destination:
